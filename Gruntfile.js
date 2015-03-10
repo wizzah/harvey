@@ -163,7 +163,7 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the app
     wiredep: {
       options: {
-        cwd: '<%= yeoman.app %>'
+        //cwd: '<%= yeoman.app %>'
       },
       app: {
         src: ['<%= yeoman.app %>/index.html'],
@@ -370,13 +370,13 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
-        'compass:server'
+       
       ],
       test: [
-        'compass'
+       
       ],
       dist: [
-        'compass:dist',
+       
         'imagemin',
         'svgmin'
       ]
