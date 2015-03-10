@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -30,4 +31,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .run(function($rootScope){
+   $rootScope.firebaseApi = 'https://vivid-torch-839.firebaseio.com/';
+  })

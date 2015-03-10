@@ -8,10 +8,6 @@
  * Controller of the harveyApp
  */
 angular.module('harveyApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, master) {
+    $scope.tests = master.object;
   });
