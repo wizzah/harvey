@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User Survey</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+	</head>
+	<body>
+
+		<div class="container">
+			<h1>Harvey Recruiting</h1>
+			<p>
+				Please fill out the following survey as accurately as you can.
+			</p>
+
+			<form>
+				<div class="form-group">
+					<label for="firstName" aria-label="(Required field)">First Name</label>
+					<input type="text" class="form-control" id="firstName" placeholder="Enter First Name Here">
+				</div>
+				<div class="form-group">
+					<label for="lastName">Last Name</label>
+					<input type="text" class="form-control" id="lastName" placeholder="Enter Last Name Here">
+				</div>
+				<div class="form-group">
+					<label for="phoneNumber">Phone Number</label>
+					<p>
+						If you would not like to receive a text reminder, leave blank. This will allow us to provide you with an SMS with confirmation reminder of your appointment.
+					</p>
+					<input type="number" class="form-control" id="phoneNumber" placeholder="Input Phone Number Formatted as xxxxxxxxxx">
+				</div>
+
+				<div class="ss-q-help ss-secondary-text" dir="ltr">
+					<label for="phoneCarrier">Phone Carrier</label>
+					<p>
+						If you would not like to receive a text reminder, leave blank. This will allow us to provide you with an SMS with confirmation reminder of your appointment.
+					</p>
+				</div></label>
+				<div class="carriers">
+					<select name="entry.69103596" id="entry_69103596" aria-label="Phone Carrier If you would not like to receive a text reminder, leave blank. This will allow us to provide you with an SMS with confirmation reminder of your appointment. ">
+						<option value=""></option>
+						<option value="3 River Wireless">3 River Wireless</option><option value="Advantage Communications">Advantage Communications</option><option value="AirVoice">AirVoice</option><option value="Airtouch Pagers">Airtouch Pagers</option><option value="AllTel">AllTel</option><option value="Alltel PCS">Alltel PCS</option><option value="Alltel">Alltel</option><option value="Ameritech Paging">Ameritech Paging</option><option value="Arch Pagers (PageNet)">Arch Pagers (PageNet)</option><option value="Blackberry">Blackberry</option><option value="Bell South Mobility">Bell South Mobility</option><option value="Bell South">Bell South</option><option value="Bell South">Bell South</option><option value="Bluegrass Cellular">Bluegrass Cellular</option><option value="Boost Mobile">Boost Mobile</option><option value="Boost">Boost</option><option value="CallPlus">CallPlus</option><option value="Carolina Mobile Communications">Carolina Mobile Communications</option><option value="Cellular One East Coast">Cellular One East Coast</option><option value="Cellular One PCS">Cellular One PCS</option><option value="Cellular One South West">Cellular One South West</option><option value="Cellular One West">Cellular One West</option><option value="Cellular One">Cellular One</option><option value="Cellular South">Cellular South</option><option value="Central Vermont Communications">Central Vermont Communications</option><option value="CenturyTel">CenturyTel</option><option value="Cingular (GSM)">Cingular (GSM)</option><option value="Cingular (TDMA)">Cingular (TDMA)</option><option value="Cingular Wireless">Cingular Wireless</option><option value="Cingular">Cingular</option><option value="Cook Paging">Cook Paging</option><option value="Corr Wireless Communications">Corr Wireless Communications</option><option value="Dobson Communications Corporation">Dobson Communications Corporation</option><option value="Dobson-Alex Wireless / Dobson-Cellular One">Dobson-Alex Wireless / Dobson-Cellular One</option><option value="Edge Wireless">Edge Wireless</option><option value="GCS Paging">GCS Paging</option><option value="GTE">GTE</option><option value="Galaxy Corporation">Galaxy Corporation</option><option value="Google Voice">Google Voice</option><option value="GrayLink / Porta-Phone">GrayLink / Porta-Phone</option><option value="Houston Cellular">Houston Cellular</option><option value="Inland Cellular Telephone">Inland Cellular Telephone</option><option value="JSM Tele-Page">JSM Tele-Page</option><option value="Lauttamus Communication">Lauttamus Communication</option><option value="MCI Phone">MCI Phone</option><option value="MCI">MCI</option><option value="Metro PCS">Metro PCS</option><option value="Metrocall 2-way">Metrocall 2-way</option><option value="Metrocall">Metrocall</option><option value="Midwest Wireless">Midwest Wireless</option><option value="Mobilecom PA">Mobilecom PA</option><option value="Mobilfone">Mobilfone</option><option value="Morris Wireless">Morris Wireless</option><option value="NPI Wireless">NPI Wireless</option><option value="Nextel">Nextel</option><option value="Ntelos">Ntelos</option><option value="Omnipoint">Omnipoint</option><option value="Omnipoint">Omnipoint</option><option value="OnlineBeep">OnlineBeep</option><option value="PCS One">PCS One</option><option value="Pacific Bell">Pacific Bell</option><option value="PageMart">PageMart</option><option value="PageOne NorthWest">PageOne NorthWest</option><option value="Pioneer / Enid Cellular">Pioneer / Enid Cellular</option><option value="Price Communications">Price Communications</option><option value="ProPage">ProPage</option><option value="Public Service Cellular">Public Service Cellular</option><option value="Qwest">Qwest</option><option value="RAM Page">RAM Page</option><option value="ST Paging">ST Paging</option><option value="Safaricom">Safaricom</option><option value="Satelindo GSM">Satelindo GSM</option><option value="Simple Freedom">Simple Freedom</option><option value="Skytel Pagers">Skytel Pagers</option><option value="Smart Telecom">Smart Telecom</option><option value="Southern LINC">Southern LINC</option><option value="Southwestern Bell">Southwestern Bell</option><option value="Sprint PCS">Sprint PCS</option><option value="SunCom">SunCom</option><option value="Surewest Communications">Surewest Communications</option><option value="T-Mobile">T-Mobile</option><option value="TIM">TIM</option><option value="TSR Wireless">TSR Wireless</option><option value="Teletouch">Teletouch</option><option value="Telus">Telus</option><option value="Triton">Triton</option><option value="US Cellular">US Cellular</option><option value="USA Mobility">USA Mobility</option><option value="Unicel">Unicel</option><option value="Verizon">Verizon</option><option value="Virgin Mobile">Virgin Mobile</option><option value="Virgin Mobile">Virgin Mobile</option><option value="WebLink Wireless">WebLink Wireless</option><option value="West Central Wireless">West Central Wireless</option><option value="Western Wireless">Western Wireless</option><option value="Wyndtell">Wyndtell</option>
+
+					</select>
+					<br/><br/>
+				</div>
+
+				<div class="form-group">
+					<label for="emailAddress">Email Address</label>
+					<input type="email" class="form-control" id="emailAddress" placeholder="Enter Email">
+				</div>
+				<div class="form-group">
+					<label for="age">Age</label>
+					<input type="number" class="form-control" id="age" placeholder="Enter Age">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" id="password" placeholder="Password">
+				</div>
+
+				<div class="gender">
+					<label for="gender">Gender</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="gender" id="genderOptionsRadio" value="gender1">
+							Male</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="gender" id="genderOptionsRadios" value="gender2">
+							Female</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="gender" id="genderOptionsRadios" value="gender3">
+							Choose Not to Answer</label>
+					</div>
+				</div><!--gender-->
+				<div class= "platforms">
+					<label for="platforms">Do you own or have regular access to any of these gaming platforms? *</label>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="platforms1">
+							PC/Mac/Linux</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="platforms2">
+							Console (such as Xbox One, XBox 360, PS4, PS3, Wii U, Wii)</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="platforms3">
+							Mobile/Tablet (iOS, WIndows Tablet, or Android Devices)</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="platforms4">
+							Handheld Console (Vita, PSP, DS, DSi, 3DS, etc.)</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="platforms5">
+							Other:
+							<input type="text" value="">
+						</label>
+					</div>
+				</div><!--platforms-->
+				<div class= "genres">
+					<label for="genres">What Genres of Games do you Typically Play? *</label>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre1">
+							Action/Adventure</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre2">
+							Fighting</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre3">
+							First-Person Shooter</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre4">
+							Massive Multiplayer Online (MMO)</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre5">
+							Massive Online Battle Arena (MOBA)</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre6">
+							Platformers</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre7">
+							Puzzle</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre8">
+							Racing</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre9">
+							Rogue-Like</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre10">
+							Role-Playing Games</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre11">
+							Sandbox</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre12">
+							Simulation</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre13">
+							Social/Casual</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre14">
+							Sports</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre15">
+							Strategy/4X</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre16">
+							Third-Person Shooter</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="genre17">
+							Turn-Based Games</label>
+					</div>
+				</div><!--genres-->
+				<div class="frequency">
+					<label for="frequency">How often do you buy games? *</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="frequency" id="frequencyOptionsRadio" value="frequency1">
+							Often (about once a week)</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="frequency" id="frequencyOptionsRadios" value="frequency2">
+							Sometimes (around once a month)</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="frequency" id="frequencyOptionsRadios" value="frequency3">
+							Rarely (around once a year)</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="frequency" id="frequencyOptionsRadios" value="frequency4">
+							Never</label>
+					</div>
+				</div><!--frequency-->
+				<div class="hours">
+					<label for="hours">On average, how many hours do you play games each week? *</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="hours" id="hoursOptionsRadio" value="hours1">
+							6 hours or less</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="hours" id="hoursOptionsRadios" value="hours2">
+							7-13 hours</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="hours" id="hoursOptionsRadios" value="hours3">
+							14-20 hours</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="hours" id="hoursOptionsRadios" value="hours4">
+							More than 20 hours</label>
+					</div>
+				</div><!--hours-->
+				<div class="spending">
+					<label for="spending">How much do you spend on games each month?</label>
+
+					<div class="radio">
+						<label>
+							<input type="radio" name="spending" id="spendingOptionsRadio" value="spending1">
+							Less than $15</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="spending" id="spendingOptionsRadio" value="spending2">
+							$15 - $30</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="spending" id="spendingOptionsRadio" value="spending3">
+							$30 - $45</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="spending" id="spendingOptionsRadio" value="spending4">
+							$45 - $60</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="spending" id="spendingOptionsRadio" value="spending5">
+							$60 - $75</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="spending" id="spendingOptionsRadio" value="spending6">
+							$75 - $100</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="spending" id="spendingOptionsRadio" value="spending7">
+							$100 - $125</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="spending" id="spendingOptionsRadio" value="spending8">
+							More than $125</label>
+					</div>
+				</div><!--spending-->
+
+				<div class= "titlesPlayed">
+					<label for="titlesPlayed">Have you played any of the following titles? *</label>
+					<p>
+						Select any games you have played.
+					</p>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="titlesPlayed1">
+							Game 1</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="titlesPlayed2">
+							Game 2</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="titlesPlayed3">
+							Game 3</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="titlesPlayed4">
+							Game 4</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="titlesPlayed5">
+							Game 5</label>
+					</div>
+				</div><!--titlesPlayed-->
+
+				<div class="household">
+					<label for="household">Do you or any member of your household (i.e. roommate, spouse, family member living in household) employed in video game industry? *</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="household" id="householdOptionsRadio" value="household1">
+							Yes</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="household" id="householdOptionsRadios" value="household2">
+							No</label>
+					</div>
+				</div><!--household-->
+				<div class="datetimeLocal">
+					<label for="datetimeLocal">Choose an appointment time *</label>
+					<div class="datetime-local">
+						<p>
+							Test is on 1/16 between 10am and 5pm. These are requests and may not reflect final appointment times.
+						</p>
+						<label>
+							<input type="datetime-local" name="datetimeLocal" id="datetimeLocalOptionsRadio" value="datetimeLocal1">
+						</label>
+						<p>
+							Example: 03/05/2013 11:30 AM
+						</p>
+					</div>
+				</div><!--datetimeLocal-->
+
+				<div class="notifications">
+					<label for="notifications">Would you like to receive notifications for future play tests that you could be eligible for? *</label>
+					<p>
+						You can notify the team at any time that you would like to be removed by replying to a message with "remove".
+					</p>
+					<div class="radio">
+						<label>
+							<input type="radio" name="notifications" id="notificationsOptionsRadio" value="notifications1">
+							Yes</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="notifications" id="notificationsOptionsRadios" value="notifications2">
+							No</label>
+					</div>
+				</div><!--notifications-->
+
+				<div class="verify">
+					<label for="verify">I verify that the information I have entered is true. *</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="verify" id="verifyOptionsRadio" value="verify1">
+							Yes, I verify</label>
+					</div>
+				</div><!--verify-->
+
+				<button type="submit" class="btn btn-default">
+					Submit
+				</button>
+			</form>
+
+		</div>
+
+	</body>
+</html>
