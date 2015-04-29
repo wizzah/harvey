@@ -1,9 +1,26 @@
 from flask import Flask, render_template, redirect, url_for, request, session, flash
 from functools import wraps
+from flask.ext.pymongo import PyMongo
+from pymongo import Connection
 
-app = Flask(__name__)
+app = Flask(harvey)
 
 app.secret_key = "my precious"
+
+mongo = PyMongo(app)
+
+@app.route('/')
+def home_page():
+    online_users = mongo.db.users.find({'online': True})
+    return render_template('index.html',
+        online_users=online_users)
+
+
+
+
+
+
+
 
 def login_required(f):
     @wraps(f)
@@ -14,11 +31,6 @@ def login_required(f):
             flash('You need to log in first.')
             return redirect(url_for('login'))
     return wrap
-
-@app.route('/')
-@login_required
-def home():
-    return "hello world!"
 
 @app.route('/welcome')
 def welcome():
