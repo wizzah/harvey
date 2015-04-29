@@ -1,2 +1,2 @@
 *.pyc
-web/flaskintro/config.py
+web/flaskintro/config/config.py

@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.7
 
-from pymongo import Connection
-import web.flaskintro.config
+import config.config as config
+import sys
+print sys.path
 
 if __name__ == '__main__':
     #todo - supply real database credentials from separate config file
@@ -27,5 +28,5 @@ if __name__ == '__main__':
     for person in peeps:
         print person
         
-    #for person in people.find():
-    #    people.remove(person)
+    for person in people.find():
+        people.remove(person)
