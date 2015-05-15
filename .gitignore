@@ -1,2 +1,3 @@
 *.pyc
 web/flaskintro/config/config.py
+flask-skeleton/
