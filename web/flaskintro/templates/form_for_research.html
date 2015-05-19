@@ -29,7 +29,14 @@
 					</p>
 					<input type="number" class="form-control" id="phoneNumber" placeholder="Input Phone Number Formatted as xxxxxxxxxx">
 				</div>
-
+				<div class="carriers">
+					<select name="entry.69103596" id="entry_69103596" aria-label="Phone Carrier If you would not like to receive a text reminder, leave blank. This will allow us to provide you with an SMS with confirmation reminder of your appointment. ">
+						<!-- loop through the list of dicts-->
+					{% for item in survey["phone_carrier"] %}
+							<option value="{{ item }}">{{ item }}</option>
+					{% endfor %}
+					</select>
+				</div>
 				<div class="ss-q-help ss-secondary-text" dir="ltr">
 					<label for="phoneCarrier">Phone Carrier</label>
 					<p>

@@ -12,7 +12,16 @@ def hello(name=None, methods=['GET', 'POST']):
 
 @app.route('/')
 def hello_world(name='WTF'):
-    return render_template('form_for_research.html', name=name)
+    # get or make different parts of the form to pass
+    # make a list of dictionaries, like what json is
+    survey = dict()
+    phone_carrier = ["one", "two", "three"]
+    survey["phone_carrier"] = phone_carrier
+    gender = ["female", "male", "don't want to disclose"]
+    survey["gender"] = gender
+    # etc
+    print survey
+    return render_template('form_for_research.html', name=name, survey=survey)
 
 @app.route('/researcher/')
 def researcher():
