@@ -7,22 +7,22 @@
         {{ form.username.label }}: {{ form.username }}
         <div data-toggle="fieldset" id="phone-fieldset">
             {{ form.phone.label }} <button type="button" data-toggle="fieldset-add-row" data-target="#phone-fieldset">+</button>
-            <table>
-                <tr>
-                    <th>Type</th>
-                    <th>Number</th>
-                    <th>Extension</th>
-                    <th></th>
-                </tr>
+            <div>
+                <div>
+                    <span>Type</span>
+                    <span>Number</span>
+                    <span>Extension</span>
+                    <span></span>
+                </div>
                 {% for phone in form.phone %}
-                <tr data-toggle="fieldset-entry">
-                    <td>{{ phone.phonetype }}</td>
-                    <td>{{ phone.number }}</td>
-                    <td>{{ phone.ext }}</td>
-                    <td><button type="button" data-toggle="fieldset-remove-row" id="phone-{{loop.index0}}-remove">-</button></td>
-                </tr>
+                <div>
+                    <span>{{ phone.phonetype }}</span>
+                    <span>{{ phone.number }}</span>
+                    <span>{{ phone.ext }}</span>
+                    <span><button>-</button></span>
+                </div>
                 {% endfor %}
-            </table>
+            </div>
         </div>
         {{ form.submit }}
         <script src="{{ url_for("static", filename="js/jquery-1.10.2.min.js") }}"></script>
